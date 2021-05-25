@@ -1,16 +1,19 @@
-table Population
+table Humans
   data_source LocalMYSQL
-  sql `dummy`.`Population`
+  sql `dummy`.`Humans`
   explore true
   column Country
     sql Country
     type string
-  column type
-    sql type
+  column Color
+    sql Color
     type string
-  column total
-    sql total
+  column Age
+    sql Age
     type int
+  column income
+    sql income
+    type float
   column number_of_rows
     sql Count(*)
     type int
