@@ -1,0 +1,16 @@
+table Population
+  data_source LocalMYSQL
+  sql `dummy`.`Population`
+  explore true
+  column Country
+    sql Country
+    type string
+  column type
+    sql type
+    type string
+  column total
+    sql total
+    type int
+  column number_of_rows
+    sql Count(*)
+    type int
